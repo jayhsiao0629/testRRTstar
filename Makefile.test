@@ -1,0 +1,19 @@
+# Simple Makefile for unit tests
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra
+
+# Test executable
+test: test_main.cpp
+	$(CXX) $(CXXFLAGS) -o test_main test_main.cpp
+
+# Clean test files
+clean_test:
+	rm -f test_main
+	rm -f test_output*.txt
+	rm -f test_input.txt
+
+# Run tests
+run_test: test
+	./test_main
+
+.PHONY: clean_test run_test

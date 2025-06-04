@@ -2,7 +2,7 @@
 ### Building:
 ```shell
 cd RRTSTAR
-make OPTIONS=“-DXXX”
+make OPTIONS=“-DFIXED_SEED”
 ```
 XXX可以有下面任何一個
 FIXED_SEED 固定亂數種
